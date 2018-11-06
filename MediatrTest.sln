@@ -5,7 +5,11 @@ VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediatrTest", "MediatrTest\MediatrTest.csproj", "{5B52932B-5D5E-4EFB-A54D-CB44FAB1F501}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Persistence\Persistence.csproj", "{665FED4D-E726-4E15-AB60-8415087D0C11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "Persistence\Persistence.csproj", "{665FED4D-E726-4E15-AB60-8415087D0C11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{D714509F-4C84-4263-9FC6-08CF9A58821C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{6229FABC-0929-4A16-B50C-248E57CFCB91}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{665FED4D-E726-4E15-AB60-8415087D0C11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{665FED4D-E726-4E15-AB60-8415087D0C11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{665FED4D-E726-4E15-AB60-8415087D0C11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D714509F-4C84-4263-9FC6-08CF9A58821C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D714509F-4C84-4263-9FC6-08CF9A58821C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D714509F-4C84-4263-9FC6-08CF9A58821C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D714509F-4C84-4263-9FC6-08CF9A58821C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6229FABC-0929-4A16-B50C-248E57CFCB91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6229FABC-0929-4A16-B50C-248E57CFCB91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6229FABC-0929-4A16-B50C-248E57CFCB91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6229FABC-0929-4A16-B50C-248E57CFCB91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

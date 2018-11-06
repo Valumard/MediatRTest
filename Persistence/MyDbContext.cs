@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace Persistence
 {
@@ -8,5 +9,7 @@ namespace Persistence
             : base(options)
         {
         }
+
+        public DbSet<Customer> Customers { get; set; }
     }
 }
