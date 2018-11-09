@@ -8,11 +8,16 @@ pipeline {
             echo 'Starting Build'
           }
         }
-        stage('') {
+        stage('error') {
           steps {
             sh 'ls'
           }
         }
+      }
+    }
+    stage('Build') {
+      steps {
+        sh 'dotnet'
       }
     }
   }
