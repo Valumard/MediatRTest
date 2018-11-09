@@ -12,8 +12,17 @@ pipeline {
       }
     }
     stage('error') {
-      steps {
-        archiveArtifacts(artifacts: 'MediatrTest/bin/**', caseSensitive: true, fingerprint: true)
+      parallel {
+        stage('error') {
+          steps {
+            archiveArtifacts(artifacts: 'MediatrTest/bin/**.*', caseSensitive: true, fingerprint: true)
+          }
+        }
+        stage('') {
+          steps {
+            sh 'docker'
+          }
+        }
       }
     }
   }
