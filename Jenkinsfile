@@ -11,9 +11,9 @@ pipeline {
         sh 'dotnet build'
       }
     }
-    stage('') {
+    stage('error') {
       steps {
-        archiveArtifacts(artifacts: 'MediatrTest/bin', caseSensitive: true, fingerprint: true)
+        archiveArtifacts(artifacts: 'MediatrTest/bin/**', caseSensitive: true, fingerprint: true)
       }
     }
   }
