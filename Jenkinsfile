@@ -2,8 +2,17 @@ pipeline {
   agent any
   stages {
     stage('TestAusgabe') {
-      steps {
-        echo 'Starting Build'
+      parallel {
+        stage('TestAusgabe') {
+          steps {
+            echo 'Starting Build'
+          }
+        }
+        stage('') {
+          steps {
+            sh 'ls'
+          }
+        }
       }
     }
   }
