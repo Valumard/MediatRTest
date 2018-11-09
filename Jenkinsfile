@@ -1,23 +1,19 @@
 pipeline {
   agent any
   stages {
-    stage('TestAusgabe') {
-      parallel {
-        stage('TestAusgabe') {
-          steps {
-            echo 'Starting Build'
-          }
-        }
-        stage('error') {
-          steps {
-            sh 'ls'
-          }
-        }
+    stage('Restore') {
+      steps {
+        sh 'dotnet restore'
       }
     }
     stage('Build') {
       steps {
-        sh 'dotnet'
+        sh 'dotnet build'
+      }
+    }
+    stage('') {
+      steps {
+        archiveArtifacts(artifacts: 'MediatrTest/bin', caseSensitive: true, fingerprint: true)
       }
     }
   }
