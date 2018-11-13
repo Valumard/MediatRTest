@@ -11,14 +11,14 @@ pipeline {
         sh 'dotnet build'
       }
     }
-    stage('error') {
+    stage('ParallelTest') {
       parallel {
-        stage('error') {
+        stage('archive') {
           steps {
             archiveArtifacts(artifacts: 'MediatrTest/bin/**.*', caseSensitive: true, fingerprint: true)
           }
         }
-        stage('') {
+        stage('dockerTest') {
           steps {
             sh 'docker'
           }
